@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+body h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #1b7fde;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: inherit;
+}
+
+label {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+input {
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #d5d5d5;
+	font-size: 20px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	display: flex;
+	border-radius: 5px;
+	
+	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper h3 {
+	color: #1b7fde;
+}
+
+form {
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex: 1;
+}
+
+.recap {
+	display: flex;
+	height: 80px;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+	background: #fff;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+}
+
+.recap p {
+	margin-left: 10px;
+}
+
+.rect {
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+	outline: 1px solid black;
+}
+
+.spin, .check {
+	outline: none;
+}
+
+.spin {
+	background-image: url('./media/images/spinner.gif');
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+
+.check {
+	background-image: url('./media/images/check.png');
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+
+.hover:hover {
+	outline: 1px solid #1b7fde;
+}
+
+.recap-img {
+	margin-left: 40px;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.recap-img small {
+	display: block;
+	font-size: 10px;
+}
+
+.recap-img small:last-of-type {
+	font-size: 8px;
+}
+
+button {
+	font-size: 15px;
+	background: #1b7fde;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+}
+
+button:hover {
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	background: #499ce9;
+}
+
+button:focus {
+	border: none;
+	outline: none;
+}
+
+@media(max-width: 900px) {
+	.container {
+		height: 1200px;
+	}
+
+	.wrapper {
+		flex-direction: column;
+	}
+
+	#login {
+		margin-top: 40px;
+	}
+}
